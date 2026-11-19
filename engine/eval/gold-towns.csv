@@ -1,0 +1,9 @@
+name,country,admin_region,unesco_world_heritage
+Hallstatt,Austria,Upper Austria,true
+Český Krumlov,Czechia,South Bohemian Region,true
+Alberobello,Italy,Apulia,true
+Shirakawa-go,Japan,Gifu,true
+Hoi An,Vietnam,Da Nang,true
+Rothenburg ob der Tauber,Germany,Bavaria,false
+Colmar,France,Grand Est,false
+Giethoorn,Netherlands,Overijssel,false

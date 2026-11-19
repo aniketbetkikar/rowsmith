@@ -1,0 +1,43 @@
+# One-command local run: cp .env.example .env (set GEMINI_API_KEY), then docker compose up
+# Builds the image once and runs the app, the worker, MongoDB and Redis.
+
+x-app: &app
+  image: rowsmith:latest
+  build:
+    context: .
+    args:
+      # Baked into prerendered metadata (og:image needs an absolute URL).
+      APP_URL: ${APP_URL:-http://localhost:3000}
+  env_file: .env
+  environment:
+    # The containers reach each other by service name; these override .env.
+    MONGODB_URI: mongodb://mongo:27017/rowsmith
+    REDIS_URL: redis://redis:6379
+  depends_on: [mongo, redis]
+  restart: unless-stopped
+
+services:
+  web:
+    <<: *app
+    command: pnpm start
+    ports: ["${PORT:-3000}:3000"]
+
+  worker:
+    <<: *app
+    command: pnpm worker:start
+
+  mongo:
+    image: mongo:8
+    volumes: [mongo-data:/data/db]
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    # noeviction: BullMQ must never lose queued jobs.
+    command: redis-server --appendonly yes --maxmemory-policy noeviction
+    volumes: [redis-data:/data]
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+  redis-data:

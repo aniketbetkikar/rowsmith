@@ -1,0 +1,7 @@
+name,country,industry,hq_country,founded,website,is_public,founders,ceo,stock_ticker
+Notion,USA,Productivity & collaboration,United States,2013,https://www.notion.com,false,Ivan Zhao|Simon Last,Ivan Zhao,
+Canva,Australia,Design & creative,Australia,2012,https://www.canva.com,false,Melanie Perkins|Cliff Obrecht|Cameron Adams,Melanie Perkins,
+Figma,USA,Design & creative,United States,2012,https://www.figma.com,true,Dylan Field|Evan Wallace,Dylan Field,FIG
+Zerodha,India,Fintech & payments,India,2010,https://zerodha.com,false,Nithin Kamath|Nikhil Kamath,Nithin Kamath,
+Razorpay,India,Fintech & payments,India,2014,https://razorpay.com,false,Harshil Mathur|Shashank Kumar,Harshil Mathur,
+Freshworks,India,"Business software (CRM, HR, support)",United States,2010,https://www.freshworks.com,true,Girish Mathrubootham|Shan Krishnasamy,Dennis Woodside,FRSH

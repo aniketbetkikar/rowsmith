@@ -1,0 +1,11 @@
+name,website,acquired_by,acquisition_year,is_public
+Wiz,wiz.io,Google,2026,false
+HashiCorp,hashicorp.com,IBM,2025,false
+Loom,loom.com,Atlassian,2023,false
+Informatica,informatica.com,Salesforce,2025,false
+Squarespace,squarespace.com,Permira,2024,false
+Mailchimp,mailchimp.com,Intuit,2021,false
+Figma,figma.com,,,true
+Tailscale,tailscale.com,,,false
+Postman,postman.com,,,false
+Mistral AI,mistral.ai,,,false

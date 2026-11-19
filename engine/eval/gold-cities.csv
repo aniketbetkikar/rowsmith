@@ -1,0 +1,7 @@
+name,country,known_for,is_national_capital,admin_region,iana_time_zone
+Sydney,Australia,,false,New South Wales,Australia/Sydney
+Wellington,New Zealand,,true,Wellington,Pacific/Auckland
+Toronto,Canada,,false,Ontario,America/Toronto
+Pune,India,,false,Maharashtra,Asia/Kolkata
+Lyon,France,,false,Auvergne-Rhône-Alpes,Europe/Paris
+Springfield,United States,Basketball Hall of Fame,false,Massachusetts,America/New_York

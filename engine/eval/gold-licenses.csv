@@ -1,0 +1,13 @@
+name,homepage,is_osi_open_source,forked_from
+Redis,redis.io,true,
+Elasticsearch,elastic.co,true,
+Kubernetes,kubernetes.io,true,
+Terraform,terraform.io,false,
+CockroachDB,cockroachlabs.com,false,
+Sentry,sentry.io,false,
+MongoDB,mongodb.com,false,
+Valkey,valkey.io,true,Redis
+OpenTofu,opentofu.org,true,Terraform
+OpenSearch,opensearch.org,true,Elasticsearch
+Apache Pekko,pekko.apache.org,true,Akka
+OpenBao,openbao.org,true,Vault
